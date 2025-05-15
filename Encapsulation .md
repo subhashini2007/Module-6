@@ -9,36 +9,35 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ## 🧠 ALGORITHM
 
 1. **Define the Class**:
-   - Create a class `Rectangle` with two private attributes: `__length` and `__breadth`.
+   - Create a class `Class1Students` with two private attributes: `__name` and `__age`.
 
 2. **Initialize Variables**:
-   - Use the `__init__()` constructor to set initial values for `__length` and `__breadth`.
+   - Use the `__init__()` constructor to set initial values for `__name` and `__age`.
 
 3. **Print Values**:
    - Display the private variables from within the class to demonstrate access.
 
 4. **Instantiate the Object**:
-   - Create an object of the `Rectangle` class to trigger the constructor.
+   - Create an object of the `obj1` class to trigger the constructor.
 
 ---
 
 ## 💻 Program
 ```
-class Rectangle:
-    def __init__(self, length, breadth):
-        self.__length = length      # Private attribute
-        self.__breadth = breadth    # Private attribute
-        self.display_values()       # Call method to display values
-
-    def display_values(self):
-        print(f"Length: {self.__length}")
-        print(f"Breadth: {self.__breadth}")
-
-# Instantiate the object
-rect1 = Rectangle(10, 5)
+class Class1Students:
+    def __init__(self,name,age): 
+        self.__name = name
+        self.__age   = age
+    def speak(self):
+        print(f"my name is {self.__name}, and I am {self.__age} years old.")
+obj1 = Class1Students("Michael", 40)
+obj1.speak()
+obj2=Class1Students('John',25)
+obj2.speak()
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/1d27d548-a2d8-4243-bb4f-c0baa55d4bb1)
+![image](https://github.com/user-attachments/assets/9df0a592-5a51-4ef2-9d7a-91b5cb099511)
+
 
 ## Result
 Program executed successfully.
